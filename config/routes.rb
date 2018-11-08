@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-	resources :recipes
+	get		 'recipes'					 => 	'recipes#show'
+	post	 'recipes' 					 => 	'recipes#create'
+	put 	 'recipes/:recipeId' => 	'recipes#update'
+	delete 'recipes/:recipeId' => 	'recipes#destroy'
 end
