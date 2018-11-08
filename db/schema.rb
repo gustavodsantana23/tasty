@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20181031050456) do
     t.string "name"
     t.string "ingredients"
     t.string "directions"
-    t.string "metadata"
+    t.string "about"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

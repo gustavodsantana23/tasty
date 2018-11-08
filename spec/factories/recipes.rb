@@ -3,6 +3,6 @@ FactoryBot.define do
 		name { Faker::Food.dish }
 		ingredients { Faker::Food.ingredient }
 		directions { Faker::Food.description }
-		metadata { Faker::Food.measurement }
+		about { Faker::Food.measurement }
 	end
 end

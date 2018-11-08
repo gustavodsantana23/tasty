@@ -38,7 +38,7 @@ RSpec.describe RecipesController, type: :request do
 		context 'when the request is valid' do
 			let(:valid_recipe) { { name: "miojo", directions: "directions",
 														 ingredients: "macarrao",
-														 metadata: "metadata"
+														 about: "about"
 													} }
 			before { post "/recipes", params: valid_recipe }
 
@@ -55,7 +55,7 @@ RSpec.describe RecipesController, type: :request do
 		context 'when the request is invalid' do
 			let(:invalid_recipe) { {directions: "directions",
 														 ingredients: "macarrao",
-														 metadata: "metadata"
+														 about: "about"
 														}}
 			before { post "/recipes", params: invalid_recipe }
 
