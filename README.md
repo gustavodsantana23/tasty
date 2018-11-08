@@ -5,6 +5,18 @@ This is a API to manage recipes.
 - Rails 5.1.6
 - Ruby  2.4.1
 
+## Installation
+After cloning the repository you should enter some commands to setup the project:
+```
+$ bundle install
+$ rails db:migrate
+```
+
+## Running
+```
+$ rails server
+```
+
 ## Endpoints
 - **GET**  `/recipes` - Retrieve all the recipes
 - **GET**  `/recipes?name=name` - Retrieve all the recipes with that `name`
@@ -25,3 +37,7 @@ Note: The _ingredients_ and the _tags_ parameters must be exactly the same that 
   ```
 - **PUT**  `/recipes/{id}` - Updates a recipe - The parameters follows the **POST** pattern
 - **DELETE** `/recipes/{id}` - Delete a recipe
+
+## Testing
+To execute the test rotines you should enter the following command:
+`$ bundle exec rspec`
