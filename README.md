@@ -1,2 +1,4 @@
-# tasty
-A recipe API
+# Tasty
+This is a API to manage recipes.
+
+
